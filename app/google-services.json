@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "841537449826",
+    "project_id": "kafuenroll",
+    "storage_bucket": "kafuenroll.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841537449826:android:e9b1b80a606bf14f9e063b",
+        "android_client_info": {
+          "package_name": "com.example.kafuenroll"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh4OAgRoV2l6Pqm0oNY79GjBAJBM-lcp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

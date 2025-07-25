@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- University Logo -->
+        <ImageView
+            android:id="@+id/universityLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kafu_icon"
+            android:layout_marginTop="40dp"
+            android:contentDescription="Kafu University Logo" />
+
+        <!-- Welcome Title -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, welcome back"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#75FF55"
+            android:layout_marginTop="16dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please fill in your details to log in"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Form Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E1E1E"
+            android:padding="24dp"
+            android:layout_marginTop="24dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:clipToOutline="true">
+
+            <!-- Username Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Username Input -->
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter email"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:backgroundTint="#333333"
+                android:inputType="text" />
+
+            <!-- Password Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter your Password"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:backgroundTint="#333333"
+                android:inputType="textPassword"
+                />
+
+            <!-- Remember me and Forgot Password -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/rememberCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me"
+                    android:textColor="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/forgotPasswordText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:textColor="#75FF55"
+                    android:textStyle="bold"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <!-- Sign In Button -->
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Sign In"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#1B6F1B"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Sign Up Prompt -->
+        <TextView
+            android:id="@+id/signUpPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account ? Sign Up"
+            android:textColor="#75FF55"
+            android:textStyle="bold" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2025– ABNO Softwares International"
+            android:textColor="#75FF55"
+            android:textSize="12sp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

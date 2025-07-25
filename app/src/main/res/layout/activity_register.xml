@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- University Logo -->
+        <ImageView
+            android:id="@+id/universityLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kafu_icon"
+            android:layout_marginTop="40dp"
+            android:contentDescription="Kafu University Logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#75FF55"
+            android:layout_marginTop="16dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill in your details to register"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Form Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E1E1E"
+            android:padding="24dp"
+            android:layout_marginTop="24dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:clipToOutline="true">
+
+            <!-- First Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter First Name"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:backgroundTint="#333333"
+                android:inputType="textPersonName" />
+
+            <!-- Last Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter Last Name"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:backgroundTint="#333333"
+                android:inputType="textPersonName" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter your Email"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:backgroundTint="#333333"
+                android:inputType="textEmailAddress" />
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter Password"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:backgroundTint="#333333"
+                android:inputType="textPassword" />
+
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#1B6F1B"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Already Have Account -->
+        <TextView
+            android:id="@+id/loginPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign in"
+            android:textColor="#75FF55"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"/>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2025– ABNO Softwares International"
+            android:textColor="#75FF55"
+            android:textSize="12sp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

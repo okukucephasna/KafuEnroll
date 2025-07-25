@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Email Top Left -->
+        <TextView
+            android:id="@+id/txtUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user@example.com"
+            android:textSize="12sp"
+            android:textColor="#75FF55"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <!-- University Logo -->
+        <ImageView
+            android:id="@+id/universityLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/kafu_icon"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Kafu University Logo" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your course"
+            android:textColor="#75FF55"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Courses Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E1E1E"
+            android:padding="24dp"
+            android:elevation="4dp"
+            android:clipToOutline="true"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Information Technology -->
+            <Button
+                android:id="@+id/btnIT"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Information Technology"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1B6F1B"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Criminology -->
+            <Button
+                android:id="@+id/btnCriminology"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Criminology"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1B6F1B"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Business Commerce -->
+            <Button
+                android:id="@+id/btnBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Business Commerce"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1B6F1B"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Optional: Additional Courses -->
+            <Button
+                android:id="@+id/btnEngineering"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Engineering"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1B6F1B"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnEducation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Education"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1B6F1B"
+                android:textStyle="bold" />
+
+            <!-- Logout Link -->
+            <TextView
+                android:id="@+id/txtLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="#1B6F1B"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2025 – ABNO Softwares International"
+            android:textColor="#75FF55"
+            android:textSize="12sp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>
